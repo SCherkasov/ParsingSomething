@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="ChartTableViewCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="93" id="KGk-i7-Jjw" customClass="ChartTableViewCell" customModule="ParsingSomething" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="93"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="92.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bb4-jW-yy1">
+                        <rect key="frame" x="108.5" y="10" width="203.5" height="72.5"/>
+                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TdR-Nr-84b">
+                        <rect key="frame" x="0.0" y="1" width="90.5" height="90.5"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cnl-Bs-3oq">
+                                <rect key="frame" x="2" y="2" width="88.5" height="86.5"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="cnl-Bs-3oq" firstAttribute="top" secondItem="TdR-Nr-84b" secondAttribute="top" constant="2" id="4B8-zV-aRC"/>
+                            <constraint firstItem="cnl-Bs-3oq" firstAttribute="leading" secondItem="TdR-Nr-84b" secondAttribute="leading" constant="2" id="4op-xq-IA0"/>
+                            <constraint firstAttribute="height" constant="90.5" id="C0M-Xt-BF0"/>
+                            <constraint firstAttribute="width" constant="90.5" id="ROX-4D-PiU"/>
+                            <constraint firstAttribute="bottom" secondItem="cnl-Bs-3oq" secondAttribute="bottom" constant="2" id="VC5-KV-AiY"/>
+                            <constraint firstAttribute="trailing" secondItem="cnl-Bs-3oq" secondAttribute="trailing" id="rZU-uy-rqf"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="bb4-jW-yy1" secondAttribute="trailing" constant="8" id="HZr-dA-hW3"/>
+                    <constraint firstAttribute="bottom" secondItem="TdR-Nr-84b" secondAttribute="bottom" constant="1" id="Ms5-i3-kpz"/>
+                    <constraint firstItem="bb4-jW-yy1" firstAttribute="leading" secondItem="TdR-Nr-84b" secondAttribute="trailing" constant="18" id="NiY-rO-hQd"/>
+                    <constraint firstItem="TdR-Nr-84b" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="gpD-ce-xkH"/>
+                    <constraint firstItem="TdR-Nr-84b" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="1" id="lHc-fo-AhH"/>
+                    <constraint firstItem="bb4-jW-yy1" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="oaN-Ha-ySu"/>
+                    <constraint firstAttribute="bottom" secondItem="bb4-jW-yy1" secondAttribute="bottom" constant="10" id="sQ1-pI-X1J"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imageRadioStation" destination="cnl-Bs-3oq" id="Rq2-H9-nwS"/>
+                <outlet property="nameRadioStation" destination="bb4-jW-yy1" id="6af-IU-WB2"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="110.15625"/>
+        </tableViewCell>
+    </objects>
+</document>
